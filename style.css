@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("login.jpg");
+    background-size: cover;
+    background-position: center;
+
+    font-family: 'Poppins', sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* BOX LOGIN */
+.all{
+    width: 100%;
+    max-width: 320px;
+    padding: 40px;
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255,255,255,0.3);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/* JUDUL */
+header h1{
+    text-align: center;
+    margin-bottom: 25px;
+    font-family: 'Faster One', cursive;
+    color: #007bff;
+    font-size: 40px;
+}
+
+/* INPUT */
+.input-box{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-box input{
+    width: 100%;
+    padding: 10px 40px; /* kiri kanan buat icon */
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+/* ICON KIRI */
+.icon{
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: gray;
+}
+
+/* ICON KANAN (MATA) */
+.toggle-password{
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: gray;
+}
+
+/* FOCUS */
+.input-box input:focus{
+    border-color: #007bff;
+}
+
+/* REMEMBER */
+.container-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.remember-me{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+}
+
+/* LINK */
+a{
+    font-size: 13px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/* BUTTON */
+button{
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover{
+    background-color: #0056b3;
+}
